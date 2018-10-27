@@ -51,7 +51,6 @@ struct Node {
             }
 
             out << itr.first << std::endl;
-
             itr.second->print(out, indent + 1);
         }
     }
@@ -59,8 +58,10 @@ struct Node {
 
 int main(int, char**) {
     Node* root = new Node;
-    root->add_word("Car");
-    root->add_word("Cat");
+    root->add_word("car");
+    root->add_word("cat");
+    root->add_word("bob");
+    root->add_word("bab");
     root->print(std::cout);
     return 0;
 }
