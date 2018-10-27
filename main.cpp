@@ -30,7 +30,7 @@ struct Node {
 
         for (auto ch : word) {
             // Does this character exist in children for the current node?
-            Node* child = find(ch);
+            Node * child = cur->find(ch);
             if (child == nullptr) {
                 // Character not found, add child
                 Node* new_node = new Node;
