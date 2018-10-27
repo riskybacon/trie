@@ -13,10 +13,6 @@ struct Node {
         return children.empty();
     }
 
-    bool contains(char ch) const {
-        return children.find(ch) != children.end();
-    }
-
     Node* find(char ch) {
         auto itr = children.find(ch);
         if (itr != children.end()) {
