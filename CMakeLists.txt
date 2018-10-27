@@ -6,7 +6,7 @@ enable_testing()
 
 set (CMAKE_CXX_STANDARD 11)
 
-add_executable(trie main.cpp)
+add_executable(trie main.cpp trie.cpp trie.h)
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
