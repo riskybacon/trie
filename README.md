@@ -23,7 +23,5 @@ You should see no output if all tests pass
 
 # References
 
-1. [Youtube](https://www.youtube.com/watch?v=-urNrIAQnNo)
-2. [Wikipedia](https://en.wikipedia.org/wiki/Trie)
-
-See https://en.wikipedia.org/wiki/Trie for more details
+1. [Youtube: Fun With Code - ](https://www.youtube.com/watch?v=-urNrIAQnNo)
+2. [Wikipedia: Trie Data Structure](https://en.wikipedia.org/wiki/Trie)
