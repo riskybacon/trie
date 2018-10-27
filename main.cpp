@@ -1,5 +1,6 @@
 #include <ostream>
 #include <iostream>
+#include <iomanip>
 #include <map>
 #include <queue>
 
@@ -43,21 +44,19 @@ struct Node {
         }
     }
 
-    void print(std::ostream& out) {
+    void print(std::ostream& out, int indent=0) {
+        if (children.size() == 0) {
+            return;
+        }
 
-        std::queue<Node*> q;
-        q.push(this);
-
-        while(!q.empty()) {
-            const Node * node = q.front();
-            q.pop();
-
-            for (auto itr : node->children) {
-                out << itr.first << ",";
-                q.push(itr.second);
+        for (auto itr : children) {
+            if (indent > 0) {
+                out << std::setw(indent) << ' ';
             }
 
-            out << std::endl;
+            out << itr.first << std::endl;
+
+            itr.second->print(out, indent + 1);
         }
     }
 };
